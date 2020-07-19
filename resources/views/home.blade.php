@@ -28,7 +28,8 @@
             <tr>
                 <td>{{$item->id}}</td>
                 <td>{{$item->detail}}</td>
-                <td>Shoping</td>
+                <td>{{$item->category->name}}</td>
+
                 <td>@if($item->status == 1)complete @else incomplete @endif</td>
 
                 <td>
